@@ -8,8 +8,8 @@ class SearchBar extends Component {
 
     // Every class must have a render function that returns some JSX
     render() {
-        return <input />
-    };
+        return <input onchange={event => console.log(event.target.value)} /> //on + name of event = { reference to the event handler }
+    }
 }
 
 export default SearchBar;
